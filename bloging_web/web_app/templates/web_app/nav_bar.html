@@ -1,0 +1,40 @@
+<div class="row main_head">
+    <div class="col-lg-1 col-md-2 col-sm-1 col-1">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="" id="btn" >&#9776</i>
+            <i class="" id="cancel">&#10006</i>
+        </label>
+        <div class="sidenav_bar">
+            <header>BLOGS</header>
+            <ul>
+                <li><a href="#">Bussiness</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Tech</a></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Style Guide</a></li>
+                <li><a href="#">License</a></li>
+                {% if status %}
+                    <li><a href="{% url 'blog_add' %}">Create blogs</a></li>
+                {% endif %}
+                <li><a href="#">404 Page</a></li>
+                <li>
+                    <a href="#"><button class="button_contact1">Contact</button></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+        <div class="row nav_head">
+            <h1><i class="fa fa-bolt"></i>POWERBLOG</h1>
+        </div>
+    </div>
+    <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+        <div class="button_contact_div">
+            <a href="#"><button class="button_contact">Contact</button></a>
+        </div>
+        
+    </div>
+</div>

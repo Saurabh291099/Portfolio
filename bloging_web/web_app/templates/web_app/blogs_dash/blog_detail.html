@@ -1,0 +1,44 @@
+{% extends 'web_app/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>page_title</title>
+{% endblock %}
+
+{% block body %}
+<div class="row main_div_details">
+    <div  class="col-lg-9 col-md-12 col-sm-12 col-12 my-4 head_col_detail">
+        <div style="text-align:center;" class="row mx-5 my-5 ">
+            <div  class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <p class="blog_det_heading"><strong>-culture-</strong></p>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <h1 class="title_detail_blog">Title of the page is here we can use jinja2 when db is ready to go</h1>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <p class="blog_det_heading"><strong>By name of the author</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="row mx-4">
+            <div class="col-lg-8 col-md-12 col-sm-12 col-12  image_div_blog_detail">
+                <img src="{% static 'images/img4.jpg' %}">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="row mx-4">
+            <div class="col-lg-8 col-md-12 col-sm-12 col-12 content_detail_blog my-3">
+                <p class="detail_blog_content">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua orci dapibus ultrices in iaculis nunc sed mauris ultrices eros in cursus turpis massa itae ultricies leo integer malesuada utrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras ibh mauris cursus mattis molestie a iaculis u non diam phasellus vestibulum lorem sed risus ultricies t malesuada fames ac turpis egestas maecenas pharetra convallis it amet volutpat consequat mauris nunc congue nisi vitae suscipit auris rhoncus aenean vel elit scelerisque mauris pellentesque gestas erat imperdiet sed euismod orem ipsum dolor sit amet consectetur adipiscing.Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
