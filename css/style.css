@@ -173,7 +173,7 @@ button {
 /* 2. Navbar  */
 
 .header_wrapper .navbar {
-    padding: 15px 0;
+    /* padding: 15px 0; */
     --webkit-transition: all .2s liner;
     --o-transition: all .2s liner;
     transition: all .2s liner;
@@ -236,6 +236,11 @@ button {
 .header_wrapper .nav-item .nav-link.active::after,
 .header_wrapper .nav-item .nav-link:hover::after {
     width: 100%;
+}
+
+.active-link {
+    border-bottom: 2px solid #ff5733;
+    /* Add your preferred border color */
 }
 
 

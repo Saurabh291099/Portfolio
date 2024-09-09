@@ -111,6 +111,10 @@
     /* banner wraapper  */
 
 
+    /* 5. project  */
+    .projects .card {
+        width: 100%;
+    }
 
 
 

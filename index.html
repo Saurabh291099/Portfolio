@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" href="images/services/favicon.png">
 
     <!-- BOOTSTRAP 5 CDN LINK -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <!-- fontawsome -->
@@ -30,7 +30,7 @@
 
     <!-- Navbar Section -->
 
-    <header class="header_wrapper">
+    <!-- <header class="header_wrapper">
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -52,20 +52,50 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#projects">Projects</a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                        </li> -->
+                        
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
-                        <!-- <li class="nav-item mt-3 mt-lg-0">
-                            <a class="main-btn" href="#contact">Hire me</a>
-                        </li> -->
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> -->
+
+
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <div class="navbar-brand" style="width:75px; height: 75px; overflow: hidden; border-radius: 50%; border: 1px solid yellowgreen; background-color: yellowgreen;"
+                    href="#">
+                    <img src="images/portfolio/pro.png" class="img"
+                        style="width:75px; height: 75px; border-radius: 50%;" alt="logo">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
 
 
 
@@ -80,8 +110,8 @@
                     <h6>WELCOME TO MY WORLD</h6>
                     <h1>I'm Saurabh Sharma <br><span>Frontend Developer.</span><br>based in india.</h1>
                     <div class="mt-4">
-                        <a class="main-btn" download="Saurabh_Frontend_dev (2).pdf"
-                            href="SaurabhSharma.pdf">Download CV</a>
+                        <a class="main-btn" download="Saurabh_Frontend_dev (2).pdf" href="SaurabhSharma.pdf">Download
+                            CV</a>
                     </div>
                 </div>
             </div>
@@ -102,7 +132,7 @@
                     <div class="my-3 my-lg-0">
                         <span class="subtitle">My About Details</span>
                         <h2>About Me</h2>
-                        <p>As a passionate Frontend Developer with 1.3 years of experience, I specialize in creating
+                        <p>As a passionate Frontend Developer with 1.2 years of experience, I specialize in creating
                             dynamic and responsive web applications. My expertise lies in HTML, CSS, JavaScript, and
                             modern frameworks such as React.js, along with Context API and Redux for state management. I
                             am proficient in Tailwind CSS and Bootstrap 5, enabling me to design visually appealing and
@@ -406,6 +436,9 @@
                 <div class="skill-card col-5 col-md-2">
                     <h5>VS Code</h5>
                 </div>
+                <div class="skill-card col-5 col-md-2">
+                    <h5>Figma</h5>
+                </div>
                 <!-- <div class="skill-card col-2 gap-2"
                     style="border: 1px solid white;">
                     <img width="70px" src="images/portfolio/html-2752158-2284975.webp" alt="skills icons">
@@ -612,6 +645,51 @@
     <!-- Footer Section Exit -->
 
 
+
+    <!-- Custom JavaScript to close the navbar on link click -->
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const navCollapse = document.getElementById('navbarNav');
+
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    If the navbar is expanded, collapse it
+                    if (navCollapse.classList.contains('show')) {
+                        new bootstrap.Collapse(navCollapse).hide();
+                    }
+                });
+            });
+        });
+    </script> -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const navCollapse = document.getElementById('navbarNav');
+
+            // Function to handle the active link styling
+            function handleActiveLink(e) {
+                navLinks.forEach(link => link.classList.remove('active-link'));  // Remove active class from all links
+                e.target.classList.add('active-link');  // Add active class to the clicked link
+            }
+
+            // Add click event to all nav links
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    // Collapse navbar in mobile view
+                    if (navCollapse.classList.contains('show')) {
+                        new bootstrap.Collapse(navCollapse).hide();
+                    }
+                    handleActiveLink(e);  // Apply active class
+                });
+            });
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="/My portfolio/js/main.js"></script>
